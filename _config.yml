@@ -78,4 +78,10 @@ theme: Nlvi
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: git@github.com:eagleLiying/eagleLiying.github.io.git
+  branch: master
+  message: '更新 blog'
+  name: eagleLiying
+  email: liying_eagle@163.com
+
