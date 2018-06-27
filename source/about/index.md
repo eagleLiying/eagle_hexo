@@ -1,6 +1,5 @@
 title: About
 type: "about"
-layout: about
 comments: false
 ---
 Eagle Li

@@ -43,7 +43,7 @@ baidu_id:
 
 about: 
   banner: http://file.muyutech.com/about.jpg
-  avatar: /images/avater.png
+  avatar: /css/images/avater.png
   description: "The end is always near."
   # weibo_username: Eagle
   # twitter_username: Eagle
