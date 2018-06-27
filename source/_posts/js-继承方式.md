@@ -2,6 +2,7 @@
 title: js 继承方式
 date: 2018-06-21 23:36:41
 tags: js
+categories: js
 ---
 
 JS作为面向对象的弱类型语言，继承也是其非常强大的特性之一。

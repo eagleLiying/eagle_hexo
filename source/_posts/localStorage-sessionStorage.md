@@ -1,7 +1,8 @@
 ---
 title: cookie、localStorage 和 sessionStorage
 date: 2018-06-23 22:23:28
-tags: html js
+tags: html
+categories: html
 ---
 
 ### Cookie

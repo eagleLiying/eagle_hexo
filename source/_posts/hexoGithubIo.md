@@ -2,6 +2,7 @@
 title: hexo + github.io
 date: 2018-06-06 00:14:18
 tags: hexo
+categories: 环境
 ---
 
 ### 第一步：需要的环境：
@@ -29,8 +30,9 @@ $ hexo server   // 启动之后再浏览器中打开 http://localhost:4000
 
 项目文件结构为：
 
-<img src="./page.png" alt="GitHub" title="GitHub,Social Coding" width="300" />
+<img src="/images/hexo-page.png" alt="GitHub" title="GitHub,Social Coding" width="300" />
 
+/images/hexo-page.png
 
 至此，我们本地的一个博客环境就已经搭建完成。
 常用的指令如下：([具体参数使用前查看详细文档](https://hexo.io/zh-cn/docs/commands.html))

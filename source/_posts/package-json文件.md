@@ -2,6 +2,7 @@
 title: package.json 文件
 date: 2018-06-17 22:52:04
 tags: package.json
+categories: json
 ---
 
 一般每个项目的更目录都会有一个 package.json 文件，定义这个项目所需要的模块以及项目的配置信息，通过执行 ` npm install ` 会根据这个配置文件自动下载所需模块。

@@ -2,6 +2,7 @@
 title: let、var、const
 date: 2018-06-22 11:20:15
 tags: js
+categories: js
 ---
 
 let、var、const 都是用来声明变量的，但是 let 、const 是为了了弥补 var 在作用域上的一些缺陷而引入的，同时在 ES6 中引入块级作用域。

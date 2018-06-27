@@ -2,6 +2,7 @@
 title: Git Command
 date: 2018-06-09 20:51:35
 tags: git
+categories: 指令
 ---
 
 使用 github 很久了，但是一直没有仔细研究过 git 指令，现在把自己常用的 git 指令总结，方便翻阅：
