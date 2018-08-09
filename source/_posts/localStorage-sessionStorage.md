@@ -141,3 +141,5 @@ sessionStorage.clear();
 localStorage.clear();
 ```
 
+### 参考链接
+https://github.com/dwqs/blog/issues/42
