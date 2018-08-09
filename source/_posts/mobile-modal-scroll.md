@@ -77,6 +77,8 @@ function setDocumentScroll(isShowModal) {
 }
 ```
 
+优化移动端滑动的 css 属性：
+ -webkit-overflow-scrolling: touch;
 
 #### 参考
 https://uedsky.com/2016-06/mobile-modal-scroll/
