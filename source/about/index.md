@@ -1,7 +1,9 @@
 title: About
 type: "about"
 comments: false
+layout: about
 ---
+
 Eagle Li
 
 喜欢自己折腾一些感兴趣的小东西

@@ -9,27 +9,59 @@ categories: html
 
 cookie 非常小，它的大小限制为4KB左右，它的主要用途有保存登录信息。比如“记住密码”，这通常就是通过在 Cookie 中存入一段辨别用户身份的数据来实现的。
 
+一般而言，cookies 会由服务端发送给客户端，客户端存储下来，然后在随后让请求中再发回给服务端。这可以用于诸如管理用户会话，追踪用户信息等事情。此外，客户端也用使用 cookies 存储数据。因而，cookies 常被用于存储一些通用的数据，如用户的首选项设置。
+
+#### 优缺点：
+优点：
+- 能用于和服务端通信
+- 当 cookie 快要自动过期时，我们可以重新设置而不是删除
+
+缺点：
+- 增加了文档传输的负载
+- 只能存储少量的数据
+- 只能存储字符串
+- 潜在的 安全问题
+- 自从有 Web Storage API (Local and Session Storage)，cookies 就不再被推荐用于存储数据了
+
+#### cookie 的基本操作
+
+```js
+// Create
+document.cookie = "user_name=eagleli";  
+document.cookie = "user_age=25;max-age=31536000;secure";
+
+// Read (All)
+console.log( document.cookie );
+
+// Update
+document.cookie = "user_age=24;max-age=31536000;secure"; 
+
+// Delete
+document.cookie = "user_name=eagleli;expires=Thu, 01 Jan 2018 00:00:01 GMT";  
+```
+
+
 ### LocalStorage
 
 localStorage 是 HTML5 标准中新加入的技术。在 IE 6 时代有一个常用的 userData 用作本地存储，当时为了考虑兼容性，使用更多的是 Flash。现在 localStorage 被大多数浏览器支持。
 
 localStorage的优势
 
-1、localStorage 拓展了cookie 的 4K 限制
+1. localStorage 拓展了cookie 的 4K 限制
 
-2、localStorage 会可以将第一次请求的数据直接存储到本地，这个相当于一个 5M 大小的针对于前端页面的数据库，相比于cookie可以节约带宽，但是这个却是只有在高版本的浏览器中才支持的
+2. localStorage 会可以将第一次请求的数据直接存储到本地，这个相当于一个 5M 大小的针对于前端页面的数据库，相比于cookie可以节约带宽，但是这个却是只有在高版本的浏览器中才支持的
 
 localStorage的局限
 
-1、浏览器的大小不统一，并且在IE8以上的IE版本才支持localStorage这个属性
+1. 浏览器的大小不统一，并且在IE8以上的IE版本才支持localStorage这个属性
 
-2、目前所有的浏览器中都会把localStorage的值类型限定为string类型，这个在对我们日常比较常见的JSON对象类型需要一些转换
+2. 目前所有的浏览器中都会把localStorage的值类型限定为string类型，这个在对我们日常比较常见的JSON对象类型需要一些转换
 
-3、localStorage在浏览器的隐私模式下面是不可读取的
+3. localStorage在浏览器的隐私模式下面是不可读取的
 
-4、localStorage本质上是对字符串的读取，如果存储内容多的话会消耗内存空间，会导致页面变卡
+4. localStorage本质上是对字符串的读取，如果存储内容多的话会消耗内存空间，会导致页面变卡
 
-5、localStorage不能被爬虫抓取到
+5. localStorage不能被爬虫抓取到
 
 ### SessionStorage
 
