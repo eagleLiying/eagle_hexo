@@ -322,7 +322,36 @@ department.generateReports(); // 错误: 方法在声明的抽象类中不存在
 例如：
 - 类的实例的 <b>类型</b>
 - 构造函数，这个函数在这个类被 new 的时候调用
+```js
+class Greeter {
+    greeting: string;
+    constructor(message: string) {
+        this.greeting = message;
+    }
+    greet() {
+        return "Hello, " + this.greeting;
+    }
+}
 
+let greeter: Greeter;
+greeter = new Greeter("world");
+console.log(greeter.greet());
+
+/* 编译成 js 之后 */
+let Greeter = (function () {
+    function Greeter(message) {
+        this.greeting = message;
+    }
+    Greeter.prototype.greet = function () {
+        return "Hello, " + this.greeting;
+    };
+    return Greeter;
+})();
+
+let greeter;
+greeter = new Greeter("world");
+console.log(greeter.greet());
+```
 
 2. 把类当做接口使用
 ```js
