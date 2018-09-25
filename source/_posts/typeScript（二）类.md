@@ -1,4 +1,9 @@
-# 类 classes
+---
+title: typesSript（二）类
+date: 2018-09-25 17:09:43
+tags: "ts"
+---
+
 
 ### 类的继承
 
