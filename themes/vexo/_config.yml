@@ -28,13 +28,20 @@ qrcode: false
 # comment
 # you can set gitment or uyan
 
-comment: gitment
+# 注释所有畅言配置
+# 注释所有gitalk配置
+# livere配置
+livere: 
+  enable: true
+  uid: MTAyMC80MDAwNy8xNjUzNA==
 
-# gitment config
-gitment_owner: eagleLiying
-gitment_repo: https://eagleliying.github.io
-gitment_oauth_id: b1af9beae5ee2358245a
-gitment_oauth_secret: 9dca8ab92adf13f3d553cefa7bd61df1c016fac7
+# comment: gitment
+
+# # gitment config
+# gitment_owner: eagleLiying
+# gitment_repo: https://eagleliying.github.io
+# gitment_oauth_id: b1af9beae5ee2358245a
+# gitment_oauth_secret: 9dca8ab92adf13f3d553cefa7bd61df1c016fac7
 
 # uyan
 # if you want to use uyan as your blog comment, plz remove/comment out gitment config
@@ -50,7 +57,7 @@ about:
   # weibo_username: Eagle
   # twitter_username: Eagle
   github_username: eagleLiying
-  # zhihu_username: yummy1121
+  zhihu_username: yummy1121
   # douban_username: eagle
   # linkedin_username:
 

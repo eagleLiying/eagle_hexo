@@ -8,7 +8,9 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><%- page.content %></section>
+    <section class="markdown-content">
+      <%- page.content %>
+    </section>
     <!-- Tags START -->
     <% if (page.tags && page.tags.length) { %>
       <div class="tags">
@@ -58,8 +60,18 @@
       <script type="text/javascript" src="http://v2.uyan.cc/code/uyan.js"></script>
       <!-- UY END -->
     <% } else { %>
-      <!-- No Comment -->
+      <div>
+          <% if (theme.livere.enable && page.comments){ %>
+            <%- partial('_partial/livere', {
+                  key: page.slug,
+                  title: page.title,
+                  url: config.url+url_for(page.path)
+                }) %>
+            <% } %>
+      </div>
     <% } %>
+
+   
   </article>
   <!-- Article END -->
   <!-- Catalog START -->
