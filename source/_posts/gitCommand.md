@@ -1,7 +1,7 @@
 ---
 title: Git Command
 date: 2018-06-09 20:51:35
-tags: git
+tags: ['git', '指令']
 categories: 指令
 ---
 
