@@ -54,7 +54,18 @@ log: 存放记录
 
 ## 连接服务器
 
-如果只是想检查服务器是否安装成功
+
+如果只是想检查服务器是否安装成功有两种方法：
+<br />
+#### 方法一
+
+你只需要在浏览器中输入：[http://localhost:27017](http://localhost:27017)，或者是 [http://127.0.0.1:27017](http://127.0.0.1:27017)，在浏览器中出现：
+
+It looks like you are trying to access MongoDB over HTTP on the native driver port
+
+则证明安装成功。
+<br />
+#### 方法二
 
 新打开一个 cmd 窗口，执行一下指令测试一下是否连接成功。
 
@@ -122,6 +133,8 @@ mongodb //我本人认为 修改 这一功能 不能够 一次 将 几条数据 
 现在可以去其他盘随意连接数据库了
 
 ## 将 mongodb 作为 windows 服务启动
+(暂未完成)
+
 
 以上启动服务器只是一次性的，当关闭了命令窗口，服务器即会关闭，可以将mongodb作为windows启动，这样一开机，mongodb服务就已经启动了 
 
