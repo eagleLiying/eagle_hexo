@@ -36,3 +36,4 @@ tags: windows
 打卡终端（windows 叫做 cmd）：选择开始 -> 在搜索输入框中输入 cmd
 显示桌面：Win + D
 移动窗口：Win + 方向键（上下左右）
+关闭窗口：alt + F4
