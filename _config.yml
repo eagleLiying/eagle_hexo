@@ -81,7 +81,7 @@ deploy:
   type: git
   repo: https://github.com/eagleLiying/eagleLiying.github.io.git
   branch: master
-  message: '更新 blog'
+  message: 'update blog'
   name: eagleLiying
   email: liying_eagle@163.com
 
