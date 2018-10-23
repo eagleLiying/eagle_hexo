@@ -3,7 +3,6 @@ title: webpack4 + react 从零开始（一）
 date: 2018-10-16 18:27:06
 tags: ['webpack', 'js', 'react']
 ---
-
 ## 创建初始化项目
 
 按照以下指令创建一个空项目：
@@ -251,7 +250,7 @@ import App from "./App";
 
 ## HTML 插件
 
-项目中需要加载 html 文件的话，需要用到：html-webpack-plugin 和 html-loader
+项目中需要加载 html 文件的话，需要用到：[html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin) 和 [html-loader](https://github.com/webpack-contrib/html-loader)
 
 安装依赖项：
 ```js
@@ -309,6 +308,23 @@ module.exports = {
 
 重新构建，发现在 dist 文件中新加了 index.html 文件，并且在该文件中引入了 main.js ，
 在浏览器中打开 index.html ，发现可以看到有组件 `App.js` 中的 “React here!”。
+
+`html-webpack-plugin` 常用的参数解释：
+```js
+options = {
+    template: path.join(__dirname, 'default_index.ejs'),  // 本地模板文件的位置，支持加载器(如handlebars、ejs、undersore、html等)
+    filename: 'index.html',  // 要输出的文件名字，默认为 index.html
+    favicon: false,  // 添加特定favicon路径到输出的html文档中
+}
+```
+
+filename：
+1. filename配置的html文件目录是相对于webpackConfig.output.path路径而言的，不是相对于当前项目目录结构的。
+2. 指定生成的html文件内容中的 `link` 和` script ` 路径是相对于生成目录下的，写路径的时候请写生成目录下的相对路径。
+
+template：
+1. template配置项在html文件使用file-loader时，其所指定的位置找不到，导致生成的html文件内容不是期望的内容。
+2. 为template指定的模板文件没有指定任何loader的话，默认使用ejs-loader。如template: './index.html'，若没有为.html指定任何loader就使用ejs-loader
 
 ## CSS 提取
 
@@ -392,6 +408,10 @@ $ npm run start
 
 在浏览器中会自动启动 `http://localhost:8080/`
 
+## 参考连接：
 
-## 参考连接
+[html-loader](https://github.com/webpack-contrib/html-loader)
+
+[html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin)
+
 [https://juejin.im/post/5af934806fb9a07ab458bced](https://juejin.im/post/5af934806fb9a07ab458bced)
