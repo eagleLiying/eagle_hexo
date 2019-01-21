@@ -171,3 +171,8 @@ new Vue({
 }).$mount("#app");
 ```
 再次运行，开心，页面终于出来了，而且路由页正常的运行。。。。😁 😁 😁 😁 😁 😁
+
+
+> 以上遇到的问中有提到 vue.common.js 和 vue.js，他俩之间的区别是：
+> Vue 最后会打包三个文件：runtime only 文件 vue.common.js（运行时），一个是 compiler only 的文件 compiler.js（编译器），一个是 runtime + compiler 的 vue.js（完整版），他们就是[官网术语](https://cn.vuejs.org/v2/guide/installation.html#%E6%9C%AF%E8%AF%AD)所说的运行时、编译器和完整版
+> 我们如果要用到 template 就要用到 compiler.js，所以我们引入 vue.js 是最好的。
