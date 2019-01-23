@@ -1,5 +1,5 @@
 ---
-title: vue 初探（一）
+title: vue 初探（一）——— 安装篇
 date: 2019-01-17 09:05:06
 tags: ["js", "vue"]
 ---
